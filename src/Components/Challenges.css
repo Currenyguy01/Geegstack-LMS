@@ -1,0 +1,283 @@
+#challenge{
+    display: flex;
+    background-color: #d8d9da;
+    min-height: 100vh;
+    > section{
+        width: 80%;
+        min-height: 100vh;
+        margin-top: 20px;
+        padding-right: 30px;
+        > nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            > div{
+                &:hover > aside{
+                    display: flex;
+                }
+                > nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                    > img{
+                        width: 30px;
+                        border-radius: 50px;
+                        margin-right: 5px;
+                    }
+                    > h4{
+                        font-size: 15px;
+                        margin-right: 5px;
+                        display: flex;
+                        align-items: start;
+                        i{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                > aside{
+                    background-color: #FFF;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0px 0px 10px gray;
+                    min-height: 60px;
+                    min-width: 150px;
+                    padding: 20px;
+                    border-radius: 4px;
+                    margin-top: 3px;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 30px;
+                    > h4{
+                        font-size: 15px;
+                        cursor: pointer;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                    > p{
+                        color: red;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+
+        .arrowleft {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 6px;
+            margin-top: 25px;
+
+            i {
+                font-size: 12px;
+            }
+        
+            p {
+                color: #134544;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 10px;
+                font-weight: 500;
+
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        > h2{
+            margin-top: 10px;
+            padding: 25px;
+            background-color: #FFF;
+            border-radius: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #34395E;
+        }
+        > #wrapper{
+            display: flex;
+            align-items: start;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            > span{
+                width: 23px;
+                padding: 4px;
+                background-color: #134544;
+                border-radius: 10px;
+                margin-top: 8px;
+            }
+            > div{
+                min-height: 45px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 20px;
+
+                > li{
+                    list-style-type: none;
+                    font-size: 18px;
+                    color: #3B3D55;
+                    font-weight: bold;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                > P{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: #162168;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+
+            button {
+                background: none;
+                border: none;
+                font: 12px Raleway, "Segoe UI",arial;
+                padding: 5px 10px;
+                font-weight: bold;
+                color: #134544;
+                cursor: pointer;
+                
+                /* &:hover {
+                   background-color: rgb(179, 159, 179); 
+                } */  
+            } 
+            .active { 
+                background-color: #134544;
+                color: #ffffff;
+                border-radius: 3px;
+                padding: 8px 15px;
+            }
+        }
+
+        .content {
+            background-color: #dce1e5;
+            height: 45vh;
+            padding: 20px 25px;
+            color: #001f4d;
+
+            p {
+                color: #162168;
+                font: 14px Raleway, "Segoe UI",arial;
+                font-weight: 600;
+            }
+
+        }
+
+        > li{
+            margin-top: 100px;
+            margin-bottom: 30px;
+            color: #007BFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    }
+}
+@media screen and (max-width: 1120px) {
+    #challenge{
+        width: 100%;
+        #navbar{
+            width: 25%;
+        }
+        section{
+            width: 75%;
+            #container{
+                width: 100%;
+                div{
+                    nav{
+                        padding: 10px;
+                        h4{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 920px) {
+    #challenge{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 25%;
+            }
+        }
+        #navbar.open {
+            display: flex;
+        }
+        section{
+            width: 100%;
+            margin: 20px;
+
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    display: flex;
+                    align-items: center;
+                    min-width: 300px;
+
+                    aside {
+                        width: 30%;
+                       
+                    }
+                    nav{
+                        width: 70%;
+                        p{
+                          font-size: 16px; 
+                        }
+                    }
+                }
+            }
+        }
+        #li {
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+   #challenge{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+   }
+} 
+@media screen and (max-width: 590px) {
+    #challenge{
+        width: 100%;
+    }
+} 

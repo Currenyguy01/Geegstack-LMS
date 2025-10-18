@@ -1,0 +1,113 @@
+#submission{
+    display: flex;
+    background-color: #d8d9da;
+    min-height: 100vh;
+    > section{
+        width: 80%;
+        min-height: 100vh;
+        margin-top: 20px;
+        padding-right: 30px;
+        > nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            > div{
+                &:hover > aside{
+                    display: flex;
+                }
+                > nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                    > img{
+                        width: 30px;
+                        border-radius: 50px;
+                        margin-right: 5px;
+                    }
+                    > h4{
+                        font-size: 15px;
+                        margin-right: 5px;
+                        display: flex;
+                        align-items: start;
+                        i{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                > aside{
+                    background-color: #FFF;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0px 0px 10px gray;
+                    min-height: 60px;
+                    min-width: 150px;
+                    padding: 20px;
+                    border-radius: 4px;
+                    margin-top: 3px;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 30px;
+                    > h4{
+                        font-size: 15px;
+                        cursor: pointer;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                    > p{
+                        color: red;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+
+        .soon-container {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px;
+
+            h1 {
+                color: #162168;
+                font: 140px Raleway, "Seoge UI", arial;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            p {
+                color: #34395e;
+                font: 18px Raleway, "Seoge UI", arial;
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                color: #007bff;
+                font: 12px Raleway, "Seoge UI", arial;
+                a{
+                    text-decoration: none;
+                    color: #007bff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        
+        }
+
+
+        > li{
+            margin-bottom: 30px;
+            color: #007BFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    }
+}
