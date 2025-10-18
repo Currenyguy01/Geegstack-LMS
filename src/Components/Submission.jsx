@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Profile from "../img/profile.png";
 const email = localStorage.getItem("emailValue");
-const removeEmail = email.split("@");
-const valid = removeEmail[0];
+// const removeEmail = email.split("@");
+const valid = email;
 
 
 function Submission(){

@@ -4,8 +4,8 @@ import NavBar from "./NavBar";
 import Profile from "../img/profile.png";
 import StudentsProfile from "./StudentsProfile";
 const email = localStorage.getItem("emailValue");
-const removeEmail = email.split("@");
-const valid = removeEmail[0];
+// const removeEmail = email.split("@");
+const valid = email;
 
 
 function Leaderboard(){
