@@ -5,8 +5,8 @@ import Profile from "../img/profile.png";
 import { useState } from "react";
 
 const email = localStorage.getItem("emailValue");
-const removeEmail = email.split("@");
-const valid = removeEmail[0];
+// const removeEmail = email.split("@");
+const valid = email;
 
 
 function Dashboard(){
