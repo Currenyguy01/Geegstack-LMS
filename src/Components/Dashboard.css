@@ -173,7 +173,7 @@
         }
     }
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1016px) {
     #dashboard{
         width: 100%;
         #navbar{
@@ -184,8 +184,14 @@
             #container{
                 width: 100%;
                 div{
+                    width: 100%;
+                    aside{
+                        width: 50%;
+                        height: auto;   
+                    }
+            
                     nav{
-                        padding: 10px;
+                        margin-bottom: 20px;
                         h4{
                             margin-top: 10px;
                         }
@@ -223,16 +229,20 @@
                 div{
                     display: flex;
                     align-items: center;
-                    min-width: 300px;
 
                     aside {
                         width: 30%;
+                        height: 100%; 
                        
                     }
                     nav{
                         width: 70%;
+                        margin-bottom: 20px;
+                        h4{
+                            font-size: 18px;
+                        }
                         p{
-                          font-size: 16px; 
+                          font-size: 12px; 
                         }
                     }
                 }
@@ -259,6 +269,25 @@
                 width: 40%;
             }
         }
+   }
+} 
+@media screen and (max-width: 720px) {
+   #dashboard{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+        section{
+            width: 100%;
+        }
+
    }
 } 
 @media screen and (max-width: 590px) {
