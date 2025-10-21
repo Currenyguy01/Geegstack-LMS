@@ -4,8 +4,7 @@ import NavBar from "./NavBar";
 import Profile from "../img/profile.png";
 import { useState } from "react";
 const email = localStorage.getItem("emailValue");
-// const removeEmail = email.split("@");
-const valid = email;
+const valid = email ? email.split("@")[0] : "";
 
 const topics = ["HTML", "CSS", "JavaScript", "React", "NodeJS", "Git & GitHub", "ExpressJS Basics", "MongoDB", "Web Hosting", "ExpressJS (Cont'd)"];
 
