@@ -330,12 +330,23 @@
             width: 100%;
             margin: 20px;
 
+            nav{
+                div{
+                    nav{
+                        h4{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
         }
         #navbar.open {
             display: flex;
         }
         section #container{
             width: 100%;
+
         }
        
         #li {
@@ -363,9 +374,9 @@
             width: 100%;
             margin: 20px;
 
-            div.content{
+            /* div.content{
                 width: 100%;
-            }
+            } */
         }
     }
 } 
@@ -381,56 +392,55 @@
         }
 
         section#container{
-            width: 90%;
+            width: 100%;
             align-items: center;
 
-            div.content{
-                width: 100%;
-            }
-        } 
-    }   
-} 
-@media screen and (max-width: 688px) {
-    #lecture{
-        width: 100%;
-
-        section{
-            width: 100%;
-            nav{
-                width: 100%;
-            }
-        }
-
-        section#container{
-            width: 90%;
-            align-items: center;
-
-            div.content{
-                width: 100%;
-            }
-        } 
-        li{
-            margin-left: 10px;
-        }
-    }   
-} 
-@media screen and (max-width: 550px) {
-    #lecture{
-        width: 100%;
-
-        section{
-            width: 100%;
-            nav{
-                width: 100%;
-            }
-        }
-
-        section#container{
-            width: 100%;
-
-
-            div.content{
+           aside#content{
                 width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+
+                div.sidebar{
+                    width: 45%;
+                }
+            }
+        } 
+    }   
+} 
+
+@media screen and (max-width: 483px) {
+    #lecture{
+        width: 100%;
+
+        section{
+            width: 100%;
+            nav{
+                width: 100%;
+               
+            }
+            h2.h{
+                width: 80%;
+                background-color:#134544;
+                color: #ccc;
+            }
+        }
+
+        section#container{
+            width: 90%;
+
+            aside#content{
+                display: flex;
+                flex-direction: column;
+            }
+            div.content{
+                width: 100%;
+                overflow: scroll;
+                sc
+                table{
+                    width: 100%;
+                    background-color: red;
+
+                }
             }
         } 
         li{

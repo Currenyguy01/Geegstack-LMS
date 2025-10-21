@@ -183,6 +183,9 @@
             width: 75%;
             #container{
                 width: 100%;
+                min-width: 250px;
+
+
                 div{
                     width: 100%;
                     aside{
@@ -296,11 +299,24 @@
         }
         section{
             width: 100%;
+
+            #container{
+                display: flex;
+                flex-direction: column;
+
+                div{
+                    width: 100%;
+
+                    aside{
+                        height: 40vh;
+                    }
+                }
+            }
         }
 
    }
 } 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 503px) {
     #dashboard{
         width: 100%;
     }

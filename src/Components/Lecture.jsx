@@ -40,7 +40,7 @@ function Lecture(){
                     <p><Link to="/Dashboard">Go Back</Link></p>
                 </nav>
 
-                <h2>Lecture</h2>
+                <h2 className="h">Lecture</h2>
 
                 <div id="wrapper">
                     <span></span>

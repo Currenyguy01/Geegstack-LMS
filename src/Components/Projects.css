@@ -1,4 +1,4 @@
-#challenge{
+#project{
     display: flex;
     background-color: #d8d9da;
     min-height: 100vh;
@@ -137,47 +137,65 @@
             }
         }
 
-        .tabs {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #f9f9f9;
-            border-bottom: 1px solid #ccc;
-            padding: 20px;
+        .leaderboard-box {
+            background-color: #ffffff;
+            border-radius: 6px;
 
-            button {
-                background: none;
-                border: none;
-                font: 12px Raleway, "Segoe UI",arial;
-                padding: 5px 10px;
-                font-weight: bold;
-                color: #134544;
-                cursor: pointer;
-                
-                /* &:hover {
-                   background-color: rgb(179, 159, 179); 
-                } */  
-            } 
-            .active { 
-                background-color: #134544;
-                color: #ffffff;
-                border-radius: 3px;
-                padding: 8px 15px;
+            .leaderboard {
+                border-bottom: 1px solid #ccc;
+                padding: 15px 20px;
             }
-        }
 
-        .content {
-            background-color: #dce1e5;
-            height: 45vh;
-            padding: 20px 25px;
-            color: #001f4d;
-
-            p {
+            h4{
                 color: #162168;
-                font: 14px Raleway, "Segoe UI",arial;
-                font-weight: 600;
+                font: 16px Raleway, "Segoe UI", arial;
+                font-weight: 650;
+            }
+
+            .student {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #eee;
+                padding: 15px 20px;
+                
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    img {
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                    .name {
+                        color: #34395e;
+                        font: 16px Raleway, "Segoe UI", arial;
+                    }
+                    .track {
+                        color: #98a6ad;
+                        font: 10px Raleway, "Segoe UI", arial;
+                    }
+                }
+                .stats {
+                    display: flex;
+                    gap: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #001f4d;
+                    padding-right: 20px;
+
+                    .pro {
+                        color: #34395e;
+                        font: 12px Raleway, "Segoe UI", arial;
+                        font-weight: 500;
+                    }
+                }
             }
 
         }
+
+      
 
         > li{
             margin-top: 100px;
@@ -188,106 +206,3 @@
         }
     }
 }
-@media screen and (max-width: 1120px) {
-    #challenge{
-        width: 100%;
-        #navbar{
-            width: 25%;
-        }
-        section{
-            width: 75%;
-            #container{
-                width: 100%;
-                div{
-                    nav{
-                        padding: 10px;
-                        h4{
-                            margin-top: 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
-@media screen and (max-width: 920px) {
-    #challenge{
-        width: 100%;
-        #navbar{
-            width: 25%;
-            display: none;
-           
-            section{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 25%;
-            }
-        }
-        #navbar.open {
-            display: flex;
-        }
-        section{
-            width: 100%;
-            margin: 20px;
-            
-            nav{
-                div{
-                    nav{
-                        h4{
-                            display: none;
-                        }
-                    }
-                }
-            }
-
-            #container{
-                display: flex;
-                flex-wrap: wrap;
-                div{
-                    display: flex;
-                    align-items: center;
-                    min-width: 300px;
-
-                    aside {
-                        width: 30%;
-                       
-                    }
-                    nav{
-                        width: 70%;
-                        p{
-                          font-size: 16px; 
-                        }
-                    }
-                }
-            }
-        }
-        #li {
-            margin-left: 10px;
-        }
-    }
-    
-}
-
-
-@media screen and (max-width: 750px) {
-   #challenge{
-        width: 100%;
-        #navbar{
-            width: 25%;
-            display: none;
-            section{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 40%;
-            }
-        }
-   }
-} 
-@media screen and (max-width: 590px) {
-    #challenge{
-        width: 100%;
-    }
-} 

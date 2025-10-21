@@ -1,4 +1,4 @@
-import "./Challenges.css"
+import "./Projects.css"
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Profile from "../img/profile.png";
@@ -22,7 +22,7 @@ function Projects(){
         }, 1000); 
     };
     return(
-        <div id="lecture">
+        <div id="project">
             <NavBar/>
             <section>
                 <nav>
