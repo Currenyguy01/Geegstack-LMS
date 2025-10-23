@@ -23,7 +23,7 @@ function Lecture(){
                     <i class="fa-solid fa-bars" onClick={handleclick}></i>
                     <div>
                         <nav>
-                            <img src={Profile} alt="profile" />
+                            <img src={Profile} alt="profile" className="img" />
                             <h4>Hi, {valid} <i class="fa-solid fa-sort-down"></i></h4>
                         </nav>
                         <aside>
