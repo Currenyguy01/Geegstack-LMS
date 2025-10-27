@@ -195,6 +195,48 @@
 
         }
 
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+
+            button {
+                background: none;
+                border: none;
+                font: 12px Raleway, "Segoe UI",arial;
+                padding: 5px 10px;
+                font-weight: bold;
+                color: #134544;
+                cursor: pointer;
+                
+                /* &:hover {
+                   background-color: rgb(179, 159, 179); 
+                } */  
+            } 
+            .active { 
+                background-color: #134544;
+                color: #ffffff;
+                border-radius: 3px;
+                padding: 8px 15px;
+            }
+        }
+
+        .content {
+            background-color: #dce1e5;
+            height: 45vh;
+            padding: 20px 25px;
+            color: #001f4d;
+
+            p {
+                color: #162168;
+                font: 14px Raleway, "Segoe UI",arial;
+                font-weight: 600;
+            }
+
+        }
+
       
 
         > li{
@@ -206,3 +248,120 @@
         }
     }
 }
+
+@media screen and (max-width: 1120px) {
+    #project{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            section{
+                width: 20%;
+            }
+        }
+        section{
+            width: 75%;
+            #container{
+                width: 100%;
+                div{
+                    nav{
+                        padding: 10px;
+                        h4{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 920px) {
+    #project{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 25%;
+            }
+        }
+        #navbar.open {
+            display: flex;
+        }
+        section{
+            width: 100%;
+            margin: 10px;
+            
+            nav{
+                div{
+                    nav{
+                        h4{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    display: flex;
+                    align-items: center;
+                    min-width: 300px;
+
+                    aside {
+                        width: 30%;
+                       
+                    }
+                    nav{
+                        width: 70%;
+                        p{
+                          font-size: 16px; 
+                        }
+                    }
+                }
+            }
+        }
+        #li {
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+   #project{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+   }
+} 
+@media screen and (max-width: 590px) {
+    #project{
+        width: 100%;
+
+        #navbar{
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 60%;
+            }
+        }
+    }
+} 

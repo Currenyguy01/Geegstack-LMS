@@ -9,6 +9,13 @@ const valid = email ? email.split("@")[0] : "";
 const topics = ["HTML", "CSS", "JavaScript", "React", "NodeJS", "Git & GitHub", "ExpressJS Basics", "MongoDB", "Web Hosting", "ExpressJS (Cont'd)"];
 
 function Projects(){
+    const [menuOpen, setMenuOpen] = useState(false)
+    const handleclick = () => {
+        if (window.innerWidth <= 920) {
+            setMenuOpen(!menuOpen);
+        }
+    }
+
     const [selected, setSelected] = useState('HTML');
     const [loading, setLoading] = useState(false);
 
@@ -23,10 +30,10 @@ function Projects(){
     };
     return(
         <div id="project">
-            <NavBar/>
+            <NavBar className={menuOpen ? "open" : ""}  onClose={() => setMenuOpen(false)}/>
             <section>
                 <nav>
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" onClick={handleclick}></i>
                     <div>
                         <nav>
                             <img src={Profile} alt="profile" />

@@ -193,6 +193,9 @@
         width: 100%;
         #navbar{
             width: 25%;
+            section{
+                width: 20%;
+            }
         }
         section{
             width: 75%;
@@ -230,7 +233,7 @@
         }
         section{
             width: 100%;
-            margin: 20px;
+            margin: 10px;
             
             nav{
                 div{
@@ -289,5 +292,18 @@
 @media screen and (max-width: 590px) {
     #challenge{
         width: 100%;
+
+        #navbar{
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 60%;
+            }
+        }
+        section{
+            margin-right: 0px;
+        }
     }
 } 

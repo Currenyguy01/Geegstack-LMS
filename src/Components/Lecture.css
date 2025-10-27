@@ -286,6 +286,12 @@
 @media screen and (max-width: 960px) {
     #lecture{
         section #container{
+            h4{
+                border-bottom: 1px solid #ccc;
+            }
+            aside#content{
+                border-top:none ;
+            }
             .content{
                 width: 100%;
 
@@ -346,6 +352,7 @@
         }
         section #container{
             width: 100%;
+            
 
         }
        

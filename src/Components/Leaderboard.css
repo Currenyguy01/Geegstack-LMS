@@ -206,3 +206,148 @@
         }
     }
 }
+
+@media screen and (max-width: 1120px) {
+    #leaderboard{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            section{
+                width: 20%;
+            }
+        }
+        section{
+            width: 75%;
+            #container{
+                width: 100%;
+                div{
+                    nav{
+                        padding: 10px;
+                        h4{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 920px) {
+    #leaderboard{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 25%;
+            }
+        }
+        #navbar.open {
+            display: flex;
+        }
+        section{
+            width: 100%;
+            margin: 10px;
+            
+            nav{
+                div{
+                    nav{
+                        h4{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+           /*  #container{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    display: flex;
+                    align-items: center;
+                    min-width: 300px;
+
+                    aside {
+                        width: 30%;
+                       
+                    }
+                    nav{
+                        width: 70%;
+                        p{
+                          font-size: 16px; 
+                        }
+                    }
+                }
+            } */
+        }
+        #li {
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+   #leaderboard{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+        div.leaderboard-box{
+            width: 100%;
+
+            .student{
+                width: 92%;
+
+                .profile{
+                    width: 100%;
+                }
+                .stats{
+                    width: 100%;
+                }
+            }
+        }
+   }
+} 
+@media screen and (max-width: 530px) {
+    #leaderboard{
+        width: 100%;
+
+        #navbar{
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 60%;
+            }
+        }
+        div.leaderboard-box{
+            width: 100%;
+
+            .student{
+                width: 92%;
+
+                .profile{
+                    width: 100%;
+                }
+                .stats{
+                    width: 100%;
+                }
+            }
+        }
+    }
+} 
