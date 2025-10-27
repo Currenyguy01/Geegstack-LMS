@@ -353,7 +353,8 @@
 @media screen and (max-width: 590px) {
     #project{
         width: 100%;
-
+        margin-left: 10px;
+        
         #navbar{
            
             section{
