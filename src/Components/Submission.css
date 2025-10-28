@@ -111,3 +111,153 @@
         }
     }
 }
+@media screen and (max-width: 1120px) {
+    #submission{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            section{
+                width: 20%;
+            }
+        }
+        section{
+            width: 75%;
+            #container{
+                width: 100%;
+                div{
+                    nav{
+                        padding: 10px;
+                        h4{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 920px) {
+    #submission{
+        width: 100%;
+        #navbar{
+            width: 25%;
+            display: none;
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 25%;
+            }
+        }
+        #navbar.open {
+            display: flex;
+        }
+        section{
+            width: 100%;
+            margin: 10px;
+            
+            nav{
+                div{
+                    nav{
+                        h4{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .soon-container{
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+
+            
+
+            
+        }
+        #li {
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 730px) {
+   #submission{
+        width: 100%;
+        
+        #navbar{
+            width: 25%;
+            display: none;
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+        div.soon-container{
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 10px;
+            h1{
+                font: 30px Raleway, "Seoge UI", arial;
+                font-style: italic;
+                font-weight: bold;
+            }
+            p{
+                font: 12px Raleway, "Seoge UI", arial;
+                font-weight: 500;
+            }
+        }
+   }
+} 
+@media screen and (max-width: 573px) {
+    #submission{
+        width: 90%;
+        margin-left: 10px;
+
+        section{
+            nav{
+                div{
+                    nav{
+                        img{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        #navbar{
+           
+            section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 60%;
+            }
+        }
+        div.soon-container{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 10px;
+            h1{
+                font: 30px Raleway, "Seoge UI", arial;
+                font-style: italic;
+                font-weight: bold;
+            }
+            p{
+                font: 12px Raleway, "Seoge UI", arial;
+                font-weight: 500;
+            }
+        }
+    }
+        
+} 
