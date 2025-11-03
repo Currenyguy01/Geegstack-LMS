@@ -183,6 +183,9 @@
 
                     
                 }
+                .timeline-item:last-child{
+                    margin-bottom: 0px;
+                }
                 
                 .timeline-item .icon {
                     position: absolute;
