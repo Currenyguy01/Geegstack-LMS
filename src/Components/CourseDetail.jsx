@@ -1,5 +1,6 @@
 import "./CourseDetail.css"
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import Profile from "../img/profile.png";
 import Roadmap from "./Roadmap";
@@ -7,13 +8,19 @@ const email = localStorage.getItem("emailValue");
 const valid = email ? email.split("@")[0] : "";
 
 function CourseDetail(){
-    
+    const [menuOpen, setMenuOpen] = useState(false)
+    const handleclick = () => {
+        if (window.innerWidth <= 920) {
+            setMenuOpen(!menuOpen);
+        }
+    }
+
     return(
         <div id="detail">
-            <NavBar/>
+            <NavBar className={menuOpen ? "open" : ""}  onClose={() => setMenuOpen(false)}/>
             <section>
                 <nav>
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" onClick={handleclick}></i>
                     <div>
                         <nav>
                             <img src={Profile} alt="profile" />
