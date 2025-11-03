@@ -141,7 +141,7 @@
             background-color: #fff;
             border-radius: 5px;
             position: relative;
-            height: 80%;
+            min-height: 80%;
 
 
             .header{
@@ -183,9 +183,9 @@
 
                     
                 }
-                .timeline-item:last-child{
+                /* .timeline-item:last-child{
                     margin-bottom: 0px;
-                }
+                } */
                 
                 .timeline-item .icon {
                     position: absolute;
@@ -395,7 +395,7 @@
             margin-right: 70px;
            
             button.complete-btn{
-                background-color: red;
+                background-color: green;
             } 
         }  
         
